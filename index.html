@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Sign in Form">
+	<meta name="author" content="Julia">
+	<title>Sign in Form</title>
+
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="container">
+		<form action="#" class="login">
+			<div class="login__container">
+				<ul class="links">
+					<li class="links__item">
+						<a href="#" class="links__link links__link--active">Sign in</a>
+					</li>
+					<li class="links__item">
+						<a href="#" class="links__link">Join us</a>
+					</li>
+				</ul>
+				<div class="field">
+					<label class="field__label" for="name">Username</label>
+					<input type="text" name="username" class="field__item" id="name" tabindex="1">
+				</div>
+				<div class="field">
+					<label class="field__label" for="email">Email</label>
+					<input type="email" name="email" class="field__item" id="email" required tabindex="2">
+				</div>
+				<div class="field">
+					<label class="field__label" for="password">Password</label>
+					<input type="password" name="password" class="field__item" id="password" tabindex="3">
+				</div>
+				<div class="field">
+					<input hidden type="checkbox" name="keep" class="field__checkbox" id="keep" checked tabindex="4">
+					<label class="field__label field__label--small" for="keep">Keep me signed in</label>
+				</div>
+				<button type="submit" class="button">Sign in</button>
+				<ul class="login__links">
+					<li class="login__item">
+						<a href="#" class="login__link">Forgot password</a>
+					</li>
+					<li class="login__item">
+						<a href="#" class="login__link">Create an account</a>
+					</li>
+				</ul>
+			</div>
+		</form>
+	</div>
+
+
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
